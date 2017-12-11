@@ -8,6 +8,14 @@ public class UserCredential {
     public UserCredential() {
     }
 
+    @Override
+    public String toString() {
+        return "UserCredential{" +
+                "username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
+
     public UserCredential(String username, String password) {
         this.username = username;
         this.password = password;
