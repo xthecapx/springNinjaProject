@@ -73,6 +73,7 @@
 		</div>
 
 		<div class="alert alert-success" role="alert" th:if="${userAdded == 1}">User added sucessfully!</div>
+		<div class="alert alert-danger" role="alert" th:if="${userAdded == 0}">There was a problem!</div>
 
 		<a href="#" th:href="@{/contacts/contactform}" class="btn btn-lg btn-primary btn-block">
 			<span class="glyphicon glyphicon-user" aria-hidden="true"></span> Add contact
