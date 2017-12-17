@@ -7,6 +7,17 @@ public class ContactModel {
     private String telephone;
     private String city;
 
+    @Override
+    public String toString() {
+        return "ContactModel{" +
+                "id=" + id +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", telephone='" + telephone + '\'' +
+                ", city='" + city + '\'' +
+                '}';
+    }
+
     public ContactModel(int id, String firstname, String lastname, String telephone, String city) {
         this.id = id;
         this.firstname = firstname;
